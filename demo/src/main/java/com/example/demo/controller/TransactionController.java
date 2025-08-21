@@ -28,8 +28,7 @@ public class TransactionController {
     }
 
     @PostMapping
-    public String createTransaction(@ModelAttribute Transaction transaction) {
-        transactionService.createTransaction(transaction);
-        return "redirect:/page1"; // or a success page
+    public Transaction createTransaction(@ModelAttribute Transaction transaction) {
+        return transactionService.createTransaction(transaction);
     }
 }

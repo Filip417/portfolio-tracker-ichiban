@@ -24,10 +24,10 @@ public class PageController {
         return "index";
     }
 
-    @PostMapping
+    @PostMapping("/")
     public String createTransactionForm(@ModelAttribute Transaction transaction) {
         transactionService.createTransaction(transaction);
-        return "redirect:/index"; // Redirect or return a view name
+        return "redirect:/"; // Redirect or return a view name
     }
 
 }
