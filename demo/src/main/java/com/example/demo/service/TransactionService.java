@@ -31,7 +31,6 @@ public class TransactionService {
 
     Dotenv dotenv = Dotenv.load();
     String apiKey = dotenv.get("TWELVE_API_KEY");
-    // private final String apiKey = "5dd5799a184f495a9c08ca9ef88eafba";
     private final RestTemplate restTemplate = new RestTemplate();
     // Inject RestTemplate/WebClient if needed
 
